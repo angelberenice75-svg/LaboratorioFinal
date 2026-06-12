@@ -13,7 +13,7 @@ public class detalle_venta {
 	        this.nombre = nombre;
 	        this.precio = precio;
 	    }
-
+ 
 	    // Getters y Setters
 	    public int getIdProducto() {
 	        return idProducto;
