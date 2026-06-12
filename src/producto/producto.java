@@ -1,95 +1,67 @@
 package producto;
+import categoria.categoria.Categoria;
 
 public class producto {
-	public class Producto {
+    
+		    private int idProducto;
+		    private String nombre;
+		    private double precioCompra;
+		    private double precioVenta;
+		    private int cantidadMax;
+		    private int cantidadMin;
+		    private Categoria categoria;
 
-	    // Atributos
-	    private int idProducto;
-	    private String nombre;
-	    private double precioCompra;
-	    private double precioVenta;
-	    private int cantidadMax;
-	    private int cantidadMin;
-	    private Categoria categoria;
+		   
+		    public Producto(int id, String nombre, double pC, double pV, Categoria cat) {
+		        this.idProducto = id;
+		        this.nombre = nombre;
+		        this.precioCompra = pC;
+		        this.precioVenta = pV;
+		        this.categoria = cat;
+		    }
 
-	  
-	    public Producto(int id, String nombre, double pC, double pV, Categoria cat) {
-	        this.idProducto = id;
-	        this.nombre = nombre;
-	        this.precioCompra = pC;
-	        this.precioVenta = pV;
-	        this.categoria = cat;
-	    }
+		    // Getters y Setters
+		    public int getIdProducto() {
+		        return idProducto;
+		    }
 
-	    // Getters y Setters
+		    public void setIdProducto(int id) {
+		        this.idProducto = id;
+		    }
 
-	    public int getIdProducto() {
-	        return idProducto;
-	    }
+		    public String getNombre() {
+		        return nombre;
+		    }
 
-	    public void setIdProducto(int id) {
-	        this.idProducto = id;
-	    }
+		    public void setNombre(String nombre) {
+		        this.nombre = nombre;
+		    }
 
-	    public String getNombre() {
-	        return nombre;
-	    }
+		    public double getPrecioCompra() {
+		        return precioCompra;
+		    }
 
-	    public void setNombre(String nombre) {
-	        this.nombre = nombre;
-	    }
+		    public void setPrecioCompra(double precio) {
+		        this.precioCompra = precio;
+		    }
 
-	    public double getPrecioCompra() {
-	        return precioCompra;
-	    }
+		    public double getPrecioVenta() {
+		        return precioVenta;
+		    }
 
-	    public void setPrecioCompra(double precio) {
-	        this.precioCompra = precio;
-	    }
+		    public void setPrecioVenta(double precio) {
+		        this.precioVenta = precio;
+		    }
 
-	    public double getPrecioVenta() {
-	        return precioVenta;
-	    }
+		    public int getCantidadMax() {
+		        return cantidadMax;
+		    }
 
-	    public void setPrecioVenta(double precio) {
-	        this.precioVenta = precio;
-	    }
+		    public void setCantidadMax(int cant) {
+		        this.cantidadMax = cant;
+		    }
 
-	    public int getCantidadMax() {
-	        return cantidadMax;
-	    }
+		    public int getCantidadMin() {
 
-	    public void setCantidadMax(int cant) {
-	        this.cantidadMax = cant;
-	    }
-
-	    public int getCantidadMin() {
-	        return cantidadMin;
-	    }
-
-	    public void setCantidadMin(int cant) {
-	        this.cantidadMin = cant;
-	    }
-
-	    public Categoria getCategoria() {
-	        return categoria;
-	    }
-
-	    public void setCategoria(Categoria cat) {
-	        this.categoria = cat;
-	    }
-
-	    // toString
-	    @Override
-	    public String toString() {
-	        return "Producto [idProducto=" + idProducto +
-	                ", nombre=" + nombre +
-	                ", precioCompra=" + precioCompra +
-	                ", precioVenta=" + precioVenta +
-	                ", cantidadMax=" + cantidadMax +
-	                ", cantidadMin=" + cantidadMin +
-	                ", categoria=" + categoria +
-	                "]";
-	    }
 	}
 }
